@@ -57,4 +57,34 @@ html, body{
    background: linear-gradient(160deg, rgb(176, 92, 175),blue)
 
 }
+img{
+    height: 150px;
+    width: 230px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.coffee{
+    background-color: rgb(233, 243, 241);
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(233, 243, 241);
+    border-radius: 10px;
+   
+}
+.coffee span{
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 76px
+}
+.coffee-list{
+font-weight: normal;
+display: flex;
+
+
+}
+.coffee-description{
+    margin-left: 10px;
+}
+
 
