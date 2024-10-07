@@ -42,5 +42,5 @@ function GenerateList(data) {
     });
 
 
-    document.body.appendChild(coffeeContainer); 
+
 }
