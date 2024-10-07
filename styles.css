@@ -1,6 +1,10 @@
 html, body{
     padding: 0;
     margin: 0;
+    background-image: url(pics/bcg.png);    
+ 
+
+    
 }
 
 .Hero{
@@ -65,22 +69,26 @@ html, body{
     border-radius: 5px;
     transition: 0.4s ease-in-out;
     
+    
 }
 .coffee img:hover{
     transform: rotate(2deg) scale(0.94);
+    opacity: 0.8;
     
 }
 .coffee{
-    background-color: rgb(249, 251, 244);
+    
     width: auto;
     margin: 10px;
     padding: 10px;
     border-radius: 2px;
     
+    
 
    
 }
     .coffee span{
+    color: black; 
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
     margin-left: 77px;
@@ -88,12 +96,14 @@ html, body{
 
 }
 .coffee-list{
-background-color: rgb(223, 227, 243);
-border-radius: 5px;
+
+border: 1px solid black;
+border-radius: 2px;
 font-weight: normal;
 display: flex;
 margin-bottom: 10px;
-overflow: hidden;
+
+
 
 
 
@@ -101,6 +111,11 @@ overflow: hidden;
 .coffee-description{
     margin-left: 9px;
     margin-top: 5px;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 
 }
 
