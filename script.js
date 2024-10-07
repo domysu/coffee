@@ -40,7 +40,7 @@ function GenerateList(data) {
         coffeeListDiv.appendChild(coffeeDescriptionDiv);
 
     });
-
+    document.body.appendChild(coffeeContainer);
 
 
 }
