@@ -1,8 +1,11 @@
 
+let CoffeeData = [];
 fetch('coffees.json')
 .then(response => response.json())
 .then(data => {
-    GenerateList(data.coffees);
+
+    CoffeeData = data.coffees;
+    GenerateList(CoffeeData);
    
     
     })
@@ -57,10 +60,25 @@ function deleteList(){
     } 
 }
 
-
+function filterAll(data){
+    deleteList();
+    GenerateList(data);
+}
 function filterStrong(data){
     deleteList();
 var data_filter = data.filter( element => element.c_level == "High");
+GenerateList(data_filter);
+
+}
+function filterMedium(data){
+    deleteList();
+var data_filter = data.filter( element => element.c_level == "Medium");
+GenerateList(data_filter);
+
+}
+function filterLight(data){
+    deleteList();
+var data_filter = data.filter( element => element.c_level == "Low");
 GenerateList(data_filter);
 
 }
