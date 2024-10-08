@@ -48,7 +48,7 @@ html, body{
     justify-content: center;
 
 }
-.navbar-menu a{
+.navbar-menu button{
     margin-right: 5px;
    padding: 5px;
    margin-top: 5px;

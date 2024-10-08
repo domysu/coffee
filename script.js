@@ -1,13 +1,18 @@
+
 fetch('coffees.json')
-    .then(response => response.json())
-    .then(data => {
-        GenerateList(data.coffees); 
+.then(response => response.json())
+.then(data => {
+    GenerateList(data.coffees);
+   
+    
     })
-    .catch(error => console.error('Error:', error));
+.catch(error => console.error('Error:', error));
+
 
 function GenerateList(data) {
     const coffeeContainer = document.createElement('div');
     coffeeContainer.classList.add('coffee');
+    coffeeContainer.setAttribute('id', 'coffeeContainer');
 
    
     data.forEach(coffee => { 
@@ -41,7 +46,21 @@ function GenerateList(data) {
 
     });
     document.body.appendChild(coffeeContainer);
+    
 
 
+}
+function deleteList(){
+    const coffeeContainer = document.getElementById('coffeeContainer');
+    if(coffeeContainer){
+        coffeeContainer.remove();
+    } 
+}
+
+
+function filterStrong(data){
+    deleteList();
+var data_filter = data.filter( element => element.c_level == "High");
+GenerateList(data_filter);
 
 }

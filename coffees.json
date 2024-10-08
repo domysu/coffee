@@ -3,42 +3,50 @@
     {
       "name": "Arabica",
       "image": "pics/coffee.png",
-      "description": "Some good coffee"
+      "description": "Some good coffee",
+      "c_level": "Medium"
     },
     {
       "name": "Robusta",
       "image": "pics/coffee_1.png",
-      "description": "Coffee worth a thousand smiles"
+      "description": "Coffee worth a thousand smiles",
+      "c_level": "High"
     },
     {
       "name": "Excelsa",
       "image": "pics/coffee_2.png",
-      "description": "A unique coffee with a tart, fruity flavor"
+      "description": "A unique coffee with a tart, fruity flavor",
+      "c_level": "Low"
     },
     {
       "name": "Liberica",
       "image": "pics/coffee_3.png",
-      "description": "A rare coffee with a distinct smoky flavor"
+      "description": "A rare coffee with a distinct smoky flavor",
+      "c_level": "Low"
     },
     {
       "name": "Espresso",
       "image": "pics/coffee_4.png",
-      "description": "Strong and rich, the essence of coffee in every sip"
+      "description": "Strong and rich, the essence of coffee in every sip",
+      "c_level": "High"
     },
     {
       "name": "Cappuccino",
       "image": "pics/coffee_5.png",
-      "description": "A creamy delight with a perfect coffee and milk balance"
+      "description": "A creamy delight with a perfect coffee and milk balance",
+      "c_level": "Medium"
     },
     {
       "name": "Latte",
       "image": "pics/coffee_6.png",
-      "description": "Smooth and creamy, a classic favorite"
+      "description": "Smooth and creamy, a classic favorite",
+      "c_level": "Low"
     },
     {
       "name": "Mocha",
       "image": "pics/coffee_7.png",
-      "description": "A delicious blend of coffee and chocolate"
+      "description": "A delicious blend of coffee and chocolate",
+      "c_level": "Low"
     }
   ]
 }
