@@ -41,15 +41,13 @@ function GenerateList(data) {
         coffeeListDiv.appendChild(imgObject);
         coffeeListDiv.appendChild(coffeeDescriptionDiv);
     });
-<<<<<<< HEAD
-    document.body.appendChild(coffeeContainer);
-=======
+
     const contentDiv = document.getElementsByClassName('content');
     
     document.body.appendChild(coffeeContainer);
 
    
-    document.body.offsetHeight;
+
 }
 function deleteList(){
     const coffeeContainer = document.getElementById('coffeeContainer');
@@ -57,7 +55,7 @@ function deleteList(){
         coffeeContainer.remove();
     } 
 }
->>>>>>> main
+
 
 function filterAll(data){
     deleteList();
