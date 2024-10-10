@@ -13,45 +13,40 @@ fetch('coffees.json')
 
 
 function GenerateList(data) {
+    deleteList(); // Clear previous content
     const coffeeContainer = document.createElement('div');
     coffeeContainer.classList.add('coffee');
     coffeeContainer.setAttribute('id', 'coffeeContainer');
 
-   
     data.forEach(coffee => { 
         const nameSpan = document.createElement('span');
         nameSpan.classList.add('name');
-        nameSpan.textContent = coffee.name; 
-     
+        nameSpan.textContent = coffee.name;
 
         const coffeeListDiv = document.createElement('div');
         coffeeListDiv.classList.add('coffee-list');
 
-       
         const imgObject = document.createElement('img');
         imgObject.src = coffee.image;
 
         const coffeeDescriptionDiv = document.createElement('div');
         coffeeDescriptionDiv.classList.add('coffee-description');
         coffeeDescriptionDiv.innerHTML = coffee.description;
-        
-        
-    
 
-     
-        coffeeContainer.appendChild(nameSpan); 
+        coffeeContainer.appendChild(nameSpan);
         coffeeContainer.appendChild(coffeeListDiv);
         coffeeContainer.appendChild(imgObject);
         coffeeContainer.appendChild(coffeeDescriptionDiv);
 
         coffeeListDiv.appendChild(imgObject);
         coffeeListDiv.appendChild(coffeeDescriptionDiv);
-
     });
-    document.body.appendChild(coffeeContainer);
+    const contentDiv = document.getElementsByClassName('content');
     
+    document.body.appendChild(coffeeContainer);
 
-
+   
+    document.body.offsetHeight;
 }
 function deleteList(){
     const coffeeContainer = document.getElementById('coffeeContainer');
