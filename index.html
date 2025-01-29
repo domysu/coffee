@@ -7,22 +7,41 @@
     
     <title>Coffee Shop</title> 
 </head>
+
 <body>
+
+<div class="container">
+    <div class="sidebar"> 
+
+    
+
+        <button class="sidebar-button" onclick="openSidebar()">☰</button>
+    
+    
+        <div class="navbar-menu">
+            <button onclick="filterAll(CoffeeData)">All Coffee</button>
+            <button onclick="filterStrong(CoffeeData)">Strong Coffee</button>
+            <button onclick="filterMedium(CoffeeData)">Medium Coffee</button>
+            <button onclick="filterLight(CoffeeData)">Light Coffee</button>
+        
+        </div>
+    </div>
+
+
+    <div class="main-content"> 
     <div class="Hero">
         <h1>Welcome to this amazing coffee shop</h1>
         <h2>I hope you enjoy!</h2>
     </div>
-    <div class="navbar-menu">
-        <button onclick="filterAll(CoffeeData)">All Coffee</button>
-        <button onclick="filterStrong(CoffeeData)">Strong Coffee</button>
-        <button onclick="filterMedium(CoffeeData)">Medium Coffee</button>
-        <button onclick="filterLight(CoffeeData)">Light Coffee</button>
-    
-    </div>
+    <div id="coffeeContainer">
+        
+    </div> <!-- Now Coffee List Goes Here -->
+</div>
 
        
 
 
-    <script src="script.js" defer></script> 
+<script src="script.js" defer></script>
+    </div> 
 </body>
 </html>

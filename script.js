@@ -13,7 +13,9 @@ fetch('coffees.json')
 
 
 function GenerateList(data) {
-    const coffeeContainer = document.createElement('div');
+
+    deleteList();
+    const coffeeContainer = document.getElementById('coffeeContainer');
     coffeeContainer.classList.add('coffee');
     coffeeContainer.setAttribute('id', 'coffeeContainer');
 
@@ -46,9 +48,9 @@ function GenerateList(data) {
 
         coffeeListDiv.appendChild(imgObject);
         coffeeListDiv.appendChild(coffeeDescriptionDiv);
+        
 
     });
-    document.body.appendChild(coffeeContainer);
     
 
 
@@ -56,7 +58,7 @@ function GenerateList(data) {
 function deleteList(){
     const coffeeContainer = document.getElementById('coffeeContainer');
     if(coffeeContainer){
-        coffeeContainer.remove();
+        coffeeContainer.innerHTML = " ";
     } 
 }
 
@@ -82,3 +84,23 @@ var data_filter = data.filter( element => element.c_level == "Low");
 GenerateList(data_filter);
 
 }
+
+function openSidebar() {
+    
+    const sidebar = document.querySelector('.sidebar'); 
+    const navbarMenu = document.querySelector('.navbar-menu');
+    const mainContent = document.querySelector('.main-content');
+
+    const currentWidth = parseInt(window.getComputedStyle(sidebar).width);
+
+    if (currentWidth > 0) {
+        sidebar.style.width = '0';
+        mainContent.style.marginLeft = '5px';
+        navbarMenu.classList.add('hidden');
+    } else {
+        sidebar.style.width = '150px';
+        mainContent.style.marginLeft = '150px';
+        navbarMenu.classList.remove('hidden');
+    }
+}
+
