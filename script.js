@@ -88,6 +88,7 @@ GenerateList(data_filter);
 function openSidebar() {
     
     const sidebar = document.querySelector('.sidebar'); 
+    const sidebarButton = document.querySelector('.sidebar-button');
     const navbarMenu = document.querySelector('.navbar-menu');
     const mainContent = document.querySelector('.main-content');
 
@@ -95,11 +96,13 @@ function openSidebar() {
 
     if (currentWidth > 0) {
         sidebar.style.width = '0';
-        mainContent.style.marginLeft = '5px';
+        mainContent.style.marginLeft = '20px';
+        sidebarButton.classList.remove('open');
         navbarMenu.classList.add('hidden');
     } else {
         sidebar.style.width = '150px';
         mainContent.style.marginLeft = '150px';
+        sidebarButton.classList.add('open');
         navbarMenu.classList.remove('hidden');
     }
 }

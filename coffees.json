@@ -1,48 +1,57 @@
 {
   "coffees": [
     {
+      "id": 1,
       "name": "Arabica",
       "image": "pics/coffee.png",
       "description": "Some good coffee",
       "c_level": "Medium"
     },
     {
+      "id": 2,
       "name": "Robusta",
       "image": "pics/coffee_1.png",
       "description": "Coffee worth a thousand smiles",
       "c_level": "High"
     },
     {
+      "id": 3,
       "name": "Excelsa",
       "image": "pics/coffee_2.png",
       "description": "A unique coffee with a tart, fruity flavor",
       "c_level": "Low"
     },
     {
+      "id": 4,
       "name": "Liberica",
       "image": "pics/coffee_3.png",
       "description": "A rare coffee with a distinct smoky flavor",
       "c_level": "Low"
     },
     {
+      "id": 5,
       "name": "Espresso",
       "image": "pics/coffee_4.png",
       "description": "Strong and rich, the essence of coffee in every sip",
       "c_level": "High"
     },
     {
+      "id": 6,
       "name": "Cappuccino",
       "image": "pics/coffee_5.png",
       "description": "A creamy delight with a perfect coffee and milk balance",
       "c_level": "Medium"
     },
     {
+      "id": 7,
       "name": "Latte",
       "image": "pics/coffee_6.png",
       "description": "Smooth and creamy, a classic favorite",
       "c_level": "Low"
     },
     {
+      
+      "id": 8,
       "name": "Mocha",
       "image": "pics/coffee_7.png",
       "description": "A delicious blend of coffee and chocolate",

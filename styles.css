@@ -64,6 +64,7 @@ html, body{
     display: none;
 }
 .navbar-menu button{
+    
     margin-right: 5px;
    padding: 15px;
    margin-top: 15px;
@@ -137,15 +138,39 @@ margin-bottom: 10px;
 
 .sidebar-button{
     position:absolute;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
     top: 0;
+    right: 5px;
     left: 0;
-    color: white;
+    color: black;
+    font-size:large;
+    cursor: pointer;
+    padding: 5px;
+    background-color:antiquewhite;
+    border-radius: 20px;
+    opacity: 100%;
+    justify-self: end;
+    
 
     
 
     
 }
+.sidebar-button:hover{
+    background-color: rgb(107, 76, 30);
+
+}
+.sidebar-button.open{
+color: white;
+background-color: black;
+
+}
+.sidebar-button.open:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
 .container{
     overflow:auto;
     height: 100%;
@@ -153,20 +178,22 @@ margin-bottom: 10px;
     overflow-y: auto;
     
 }
-.sidebar{   
-    position:fixed;
-    width: 150px;
+.sidebar{
+    opacity: 75%;   
+    position: fixed;
+    width: 0px;
     height: 100%;
     background-color: black;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.1s ease-in-out;
+
 }
 
 .main-content {
-    margin-left: 150px;
+    margin-left: 20px;
     flex-grow: 1; /* Expands to fill remaining space */
     padding: 20px;
     height:100%;
-    transition: margin-left 0.3s ease-in-out;
+    transition: margin-left 0.1s ease-in-out;
     
 }
 button{
